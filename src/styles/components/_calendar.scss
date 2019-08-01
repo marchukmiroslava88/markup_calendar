@@ -18,9 +18,9 @@
 
     &:hover {
       cursor: pointer;
-      @include hover("background-color", pink);
-      @include hover("margin-top", -20px);
     }
+    @include hover("background-color", pink);
+    @include hover("margin-top", -20px);
   }
 
   &-28 {
