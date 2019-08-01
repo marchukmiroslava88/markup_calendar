@@ -1,7 +1,7 @@
 @import "utils";
 @import "fonts";
-@import "typography";
+@import "components/calendar";
 
 body {
-  background: $c-gray;
+  font-family: Arial, sans-serif;
 }

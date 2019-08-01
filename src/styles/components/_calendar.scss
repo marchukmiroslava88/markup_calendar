@@ -1,0 +1,63 @@
+@include renderDays(31);
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 730px;
+  padding: 25px;
+
+  &-item {
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    border: 1px solid black;
+    background: $c-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+      @include hover("background-color", pink);
+      @include hover("margin-top", -20px);
+    }
+  }
+
+  &-28 {
+    .calendar-item:nth-last-child(-n+3) {
+      display: none;
+    }
+  }
+
+  &-29 {
+    .calendar-item:nth-last-child(-n+2) {
+      display: none;
+    }
+  }
+
+  &-30 {
+    .calendar-item:nth-last-child(-n+1) {
+      display: none;
+    }
+  }
+
+}
+
+$dayOfWeek: (
+  0: mon,
+  1: tue,
+  2: wed,
+  3: thu,
+  4: fri,
+  5: sat,
+  6: sun
+);
+
+@each $key,$val in $dayOfWeek {
+  .calendar-#{$val} .calendar-item {
+
+    &:nth-child(-n+#{$key}) {
+      display: none;
+    }
+  }
+}
