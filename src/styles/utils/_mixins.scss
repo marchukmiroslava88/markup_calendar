@@ -5,9 +5,9 @@
   }
 }
 
-@mixin renderDays($_num) {
+@mixin renderDays($_selector, $_num) {
   @for $i from 1 through $_num {
-    .calendar-item:nth-child(#{$i}) {
+    #{$_selector}:nth-child(#{$i}) {
       &:after {
         content: "#{$i}";
       }

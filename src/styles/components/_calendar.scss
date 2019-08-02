@@ -1,4 +1,4 @@
-@include renderDays(31);
+@include renderDays(".calendar-item", 31);
 
 .calendar {
   display: flex;
