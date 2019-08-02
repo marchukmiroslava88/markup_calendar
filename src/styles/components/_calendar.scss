@@ -3,18 +3,21 @@
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  max-width: 730px;
+  max-width: #{$default-width}px;
   padding: 25px;
 
   &-item {
-    width: 100px;
+    width: #{$item-width}px;
     height: 100px;
-    margin: 1px;
+    margin-right: #{$default-margin}px;
+    margin-bottom: #{$default-margin}px;
     border: 1px solid black;
     background: $c-gray;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 30px;
+    box-sizing: border-box;
 
     &:hover {
       cursor: pointer;
@@ -44,20 +47,17 @@
 }
 
 $dayOfWeek: (
-  0: mon,
-  1: tue,
-  2: wed,
-  3: thu,
-  4: fri,
-  5: sat,
-  6: sun
+  mon: 0,
+  tue: $item-width*1 + $default-margin*1,
+  wed: $item-width*2 + $default-margin*2,
+  thu: $item-width*3 + $default-margin*3,
+  fri: $item-width*4 + $default-margin*4,
+  sat: $item-width*5 + $default-margin*5,
+  sun: $item-width*6 + $default-margin*6
 );
 
 @each $key,$val in $dayOfWeek {
-  .calendar-#{$val} .calendar-item {
-
-    &:nth-child(-n+#{$key}) {
-      display: none;
-    }
+  .calendar-#{$key} .calendar-item:first-child {
+    margin-left: #{$val}px;
   }
 }
