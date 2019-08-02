@@ -23,7 +23,7 @@
       cursor: pointer;
     }
     @include hover("background-color", pink);
-    @include hover("margin-top", -20px);
+    @include hover("transform", translateY(-20px));
   }
 
   &-28 {
