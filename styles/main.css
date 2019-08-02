@@ -119,17 +119,17 @@
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    -webkit-transition: margin-top 0.5s;
+    transition: margin-top 0.5s; }
     .calendar-item:hover {
-      cursor: pointer;
-      -webkit-transition: background-color 0.5s;
-      transition: background-color 0.5s;
-      -webkit-transition: margin-top 0.5s;
-      transition: margin-top 0.5s; }
-      .calendar-item:hover:hover {
-        background-color: pink; }
-      .calendar-item:hover:hover {
-        margin-top: -20px; }
+      cursor: pointer; }
+    .calendar-item:hover {
+      background-color: pink; }
+    .calendar-item:hover {
+      margin-top: -20px; }
   .calendar-28 .calendar-item:nth-last-child(-n+3) {
     display: none; }
   .calendar-29 .calendar-item:nth-last-child(-n+2) {
