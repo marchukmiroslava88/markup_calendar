@@ -1,4 +1,4 @@
-@include renderDays(".calendar-item", 31);
+@include renderDays(".calendar div", 31);
 
 .calendar {
   display: flex;
@@ -6,7 +6,7 @@
   max-width: #{$default-width}px;
   padding: 25px;
 
-  &-item {
+  div {
     width: #{$item-width}px;
     height: 100px;
     margin-right: #{$default-margin}px;
@@ -27,19 +27,19 @@
   }
 
   &-28 {
-    .calendar-item:nth-last-child(-n+3) {
+    div:nth-last-child(-n+3) {
       display: none;
     }
   }
 
   &-29 {
-    .calendar-item:nth-last-child(-n+2) {
+    div:nth-last-child(-n+2) {
       display: none;
     }
   }
 
   &-30 {
-    .calendar-item:nth-last-child(-n+1) {
+    div:nth-last-child(-n+1) {
       display: none;
     }
   }
@@ -57,7 +57,7 @@ $dayOfWeek: (
 );
 
 @each $key,$val in $dayOfWeek {
-  .calendar-#{$key} .calendar-item:first-child {
+  .calendar-#{$key} div:first-child {
     margin-left: #{$val}px;
   }
 }
