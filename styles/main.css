@@ -4,97 +4,97 @@
   font-weight: normal;
   font-style: normal; }
 
-.calendar-item:nth-child(1):after {
+.calendar div:nth-child(1):after {
   content: "1"; }
 
-.calendar-item:nth-child(2):after {
+.calendar div:nth-child(2):after {
   content: "2"; }
 
-.calendar-item:nth-child(3):after {
+.calendar div:nth-child(3):after {
   content: "3"; }
 
-.calendar-item:nth-child(4):after {
+.calendar div:nth-child(4):after {
   content: "4"; }
 
-.calendar-item:nth-child(5):after {
+.calendar div:nth-child(5):after {
   content: "5"; }
 
-.calendar-item:nth-child(6):after {
+.calendar div:nth-child(6):after {
   content: "6"; }
 
-.calendar-item:nth-child(7):after {
+.calendar div:nth-child(7):after {
   content: "7"; }
 
-.calendar-item:nth-child(8):after {
+.calendar div:nth-child(8):after {
   content: "8"; }
 
-.calendar-item:nth-child(9):after {
+.calendar div:nth-child(9):after {
   content: "9"; }
 
-.calendar-item:nth-child(10):after {
+.calendar div:nth-child(10):after {
   content: "10"; }
 
-.calendar-item:nth-child(11):after {
+.calendar div:nth-child(11):after {
   content: "11"; }
 
-.calendar-item:nth-child(12):after {
+.calendar div:nth-child(12):after {
   content: "12"; }
 
-.calendar-item:nth-child(13):after {
+.calendar div:nth-child(13):after {
   content: "13"; }
 
-.calendar-item:nth-child(14):after {
+.calendar div:nth-child(14):after {
   content: "14"; }
 
-.calendar-item:nth-child(15):after {
+.calendar div:nth-child(15):after {
   content: "15"; }
 
-.calendar-item:nth-child(16):after {
+.calendar div:nth-child(16):after {
   content: "16"; }
 
-.calendar-item:nth-child(17):after {
+.calendar div:nth-child(17):after {
   content: "17"; }
 
-.calendar-item:nth-child(18):after {
+.calendar div:nth-child(18):after {
   content: "18"; }
 
-.calendar-item:nth-child(19):after {
+.calendar div:nth-child(19):after {
   content: "19"; }
 
-.calendar-item:nth-child(20):after {
+.calendar div:nth-child(20):after {
   content: "20"; }
 
-.calendar-item:nth-child(21):after {
+.calendar div:nth-child(21):after {
   content: "21"; }
 
-.calendar-item:nth-child(22):after {
+.calendar div:nth-child(22):after {
   content: "22"; }
 
-.calendar-item:nth-child(23):after {
+.calendar div:nth-child(23):after {
   content: "23"; }
 
-.calendar-item:nth-child(24):after {
+.calendar div:nth-child(24):after {
   content: "24"; }
 
-.calendar-item:nth-child(25):after {
+.calendar div:nth-child(25):after {
   content: "25"; }
 
-.calendar-item:nth-child(26):after {
+.calendar div:nth-child(26):after {
   content: "26"; }
 
-.calendar-item:nth-child(27):after {
+.calendar div:nth-child(27):after {
   content: "27"; }
 
-.calendar-item:nth-child(28):after {
+.calendar div:nth-child(28):after {
   content: "28"; }
 
-.calendar-item:nth-child(29):after {
+.calendar div:nth-child(29):after {
   content: "29"; }
 
-.calendar-item:nth-child(30):after {
+.calendar div:nth-child(30):after {
   content: "30"; }
 
-.calendar-item:nth-child(31):after {
+.calendar div:nth-child(31):after {
   content: "31"; }
 
 .calendar {
@@ -105,7 +105,7 @@
       flex-wrap: wrap;
   max-width: 707px;
   padding: 25px; }
-  .calendar-item {
+  .calendar div {
     width: 100px;
     height: 100px;
     margin-right: 1px;
@@ -130,39 +130,39 @@
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s; }
-    .calendar-item:hover {
+    .calendar div:hover {
       cursor: pointer; }
-    .calendar-item:hover {
+    .calendar div:hover {
       background-color: pink; }
-    .calendar-item:hover {
+    .calendar div:hover {
       -webkit-transform: translateY(-20px);
               transform: translateY(-20px); }
-  .calendar-28 .calendar-item:nth-last-child(-n+3) {
+  .calendar-28 div:nth-last-child(-n+3) {
     display: none; }
-  .calendar-29 .calendar-item:nth-last-child(-n+2) {
+  .calendar-29 div:nth-last-child(-n+2) {
     display: none; }
-  .calendar-30 .calendar-item:nth-last-child(-n+1) {
+  .calendar-30 div:nth-last-child(-n+1) {
     display: none; }
 
-.calendar-mon .calendar-item:first-child {
+.calendar-mon div:first-child {
   margin-left: 0px; }
 
-.calendar-tue .calendar-item:first-child {
+.calendar-tue div:first-child {
   margin-left: 101px; }
 
-.calendar-wed .calendar-item:first-child {
+.calendar-wed div:first-child {
   margin-left: 202px; }
 
-.calendar-thu .calendar-item:first-child {
+.calendar-thu div:first-child {
   margin-left: 303px; }
 
-.calendar-fri .calendar-item:first-child {
+.calendar-fri div:first-child {
   margin-left: 404px; }
 
-.calendar-sat .calendar-item:first-child {
+.calendar-sat div:first-child {
   margin-left: 505px; }
 
-.calendar-sun .calendar-item:first-child {
+.calendar-sun div:first-child {
   margin-left: 606px; }
 
 body {
